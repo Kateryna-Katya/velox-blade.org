@@ -1,11 +1,11 @@
 /**
- * PROJECT: techn-ware.fit
- * FINAL UNIFIED SCRIPT
+ * PROJECT: velox-blade.org
+ * FINAL UNIFIED SCRIPT (POLISH VERSION)
  */
 
 document.addEventListener('DOMContentLoaded', () => {
     
-    // 1. ПЛАВНЫЙ СКРОЛЛ (LENIS)
+    // 1. PŁYNNE PRZEWIJANIE (LENIS)
     let lenis;
     if (typeof Lenis !== 'undefined') {
         lenis = new Lenis({
@@ -19,7 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
         requestAnimationFrame(raf);
     }
 
-    // 2. АНИМАЦИИ ПРИ СКРОЛЛЕ (AOS)
+    // 2. ANIMACJE PRZY PRZEWIJANIU (AOS)
     if (typeof AOS !== 'undefined') {
         AOS.init({
             duration: 1000,
@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
-    // 3. ИНИЦИАЛИЗАЦИЯ ВСЕХ БЛОКОВ
+    // 3. INICJALIZACJA WSZYSTKICH BLOKÓW
     initHeroThreeJS();
     initNavigation();
     initMentors();
@@ -41,7 +41,7 @@ document.addEventListener('DOMContentLoaded', () => {
     if (typeof lucide !== 'undefined') lucide.createIcons();
 });
 
-/* --- ГЛОБАЛЬНАЯ НАВИГАЦИЯ И МОБИЛЬНОЕ МЕНЮ --- */
+/* --- NAWIGACJA GLOBALNA I MENU MOBILNE --- */
 function initNavigation() {
     const header = document.querySelector('.header');
     const burger = document.querySelector('[data-burger]');
@@ -114,12 +114,18 @@ function initHeroThreeJS() {
     });
 }
 
-/* --- МЕНТОРЫ: ИНТЕРАКТИВНЫЙ СПИСОК --- */
+/* --- MENTORZY: LISTA INTERAKTYWNA --- */
 function initMentors() {
     const items = document.querySelectorAll('.mentor-item');
     const imgs = document.querySelectorAll('.mentor-img');
     const quote = document.getElementById('mentor-quote-text');
-    const quotes = { "1": "«Технологии, которые работают на вас — это стратегия.»", "2": "«Воплотите мечты в реальность через AI.»", "3": "«Постройте карьеру в ЕС осознанно.»" };
+    
+    // Polskie tłumaczenie cytatów
+    const quotes = { 
+        "1": "«Technologie, które pracują dla Ciebie — to Twoja strategia wzrostu.»", 
+        "2": "«Zmień swoje marzenia w rzeczywistość dzięki AI.»", 
+        "3": "«Buduj świadomie swoją karierę na rynku Unii Europejskiej.»" 
+    };
 
     items.forEach(item => {
         item.addEventListener('mouseenter', () => {
@@ -132,7 +138,7 @@ function initMentors() {
     });
 }
 
-/* --- FAQ: АККОРДЕОН --- */
+/* --- FAQ: AKORDEON --- */
 function initFaq() {
     document.querySelectorAll('.faq__header').forEach(header => {
         header.addEventListener('click', () => {
@@ -144,7 +150,7 @@ function initFaq() {
     });
 }
 
-/* --- ФОРМА: ВАЛИДАЦИЯ И КАПЧА --- */
+/* --- FORMULARZ: WALIDACJA I CAPTCHA --- */
 function initContactForm() {
     const form = document.getElementById('career-form');
     if (!form) return;
@@ -156,11 +162,15 @@ function initContactForm() {
     let n1 = Math.floor(Math.random() * 10), n2 = Math.floor(Math.random() * 10);
     if (captchaLabel) captchaLabel.innerText = `${n1} + ${n2}`;
 
+    // Tylko cyfry i plus dla telefonu
     phone.addEventListener('input', (e) => e.target.value = e.target.value.replace(/[^0-9+]/g, ''));
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
-        if (parseInt(document.getElementById('captcha').value) !== (n1 + n2)) return alert('Ошибка капчи!');
+        // Walidacja prostej captchy
+        if (parseInt(document.getElementById('captcha').value) !== (n1 + n2)) {
+            return alert('Błąd walidacji! Proszę sprawdzić wynik dodawania.');
+        }
         
         success.classList.add('active');
         form.reset();
@@ -169,13 +179,15 @@ function initContactForm() {
     document.getElementById('close-success')?.addEventListener('click', () => success.classList.remove('active'));
 }
 
-/* --- COOKIE POPUP LOGIC --- */
+/* --- LOGIKA POPUP COOKIE --- */
 function initCookiePopup() {
     const popup = document.getElementById('cookie-popup');
     const acceptBtn = document.getElementById('cookie-accept');
 
     if (!localStorage.getItem('cookie-accepted')) {
-        setTimeout(() => popup.classList.add('active'), 2000);
+        setTimeout(() => {
+            if (popup) popup.classList.add('active');
+        }, 2000);
     }
 
     acceptBtn?.addEventListener('click', () => {
