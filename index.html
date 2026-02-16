@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        <?= $domainTitle ?> — Карьерный апгрейд и инновации
+    </title>
+<link rel="icon" type="image/svg+xml"
+    href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cpath d='M4 24h6v4H4v-4zm8-8h6v12h-6V16zm8-8h6v20h-6V8zM22 2l6 6-6 6-6-6 6-6z' fill='%235D5FEF'/%3E%3C/svg%3E">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Syne:wght@600;700;800&display=swap"
+        rel="stylesheet">
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/lenis@1.0.0/dist/lenis.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="container header__container">
+            <a href="./#hero" class="logo">
+                <span class="logo__dot"></span>
+                <span class="logo__text">
+                    <?= $domainTitle ?>
+                </span>
+            </a>
+
+            <nav class="nav" data-nav>
+                <ul class="nav__list">
+                    <li><a href="./#hero" class="nav__link">Главная</a></li>
+                    <li><a href="./#strategies" class="nav__link">Стратегии</a></li>
+                    <li><a href="./#cases" class="nav__link">Кейсы</a></li>
+                    <li><a href="./#mentors" class="nav__link">Менторы</a></li>
+                    <li><a href="./#faq" class="nav__link">Вопросы</a></li>
+                </ul>
+            </nav>
+
+            <div class="header__actions">
+                <a href="./#contact" class="btn btn--header">Связаться</a>
+                <button class="burger" aria-label="Menu" data-burger>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+<section class="hero" id="hero">
+    <div id="hero-canvas" class="hero__canvas"></div>
+    <div class="container hero__container">
+        <div class="hero__content">
+            <span class="hero__badge" data-aos="fade-up">Технология нового поколения</span>
+            <h1 class="hero__title" data-aos="fade-up" data-aos-delay="200">
+                <?= $domainTitle ?>: Постройте карьеру, которая <span class="text-gradient">работает на вас</span>
+            </h1>
+            <p class="hero__text" data-aos="fade-up" data-aos-delay="400">
+                Инновационная платформа для оценки перспектив проекта и переосмысления подхода к вашему развитию.
+                Откройте новые возможности уже сегодня.
+            </p>
+            <div class="hero__actions" data-aos="fade-up" data-aos-delay="600">
+                <a href="#contact" class="btn btn--primary">Начать сейчас</a>
+                <a href="#strategies" class="btn btn--outline">Узнать детали</a>
+            </div>
+        </div>
+
+        <div class="hero__stats" data-aos="fade-left" data-aos-delay="800">
+            <div class="stat-item">
+                <span class="stat-item__num">500+</span>
+                <span class="stat-item__label">кейсов роста</span>
+            </div>
+            <div class="stat-item">
+                <span class="stat-item__num">15+</span>
+                <span class="stat-item__label">стран ЕС</span>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="strategies" id="strategies">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-subtitle">Методологии, доказавшие эффективность</span>
+            <h2 class="section-title">Стратегии роста на базе инноваций</h2>
+            <p class="section-desc">Решения, которые меняют правила игры в вашей профессиональной жизни.</p>
+        </div>
+
+        <div class="strategies__grid">
+            <div class="strategy-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="strategy-card__icon">
+                    <i data-lucide="layers"></i>
+                </div>
+                <h3 class="strategy-card__title">Skill Mapping</h3>
+                <p class="strategy-card__text">
+                    Передовая цифровая инфраструктура для анализа ваших компетенций и выявления зон прорыва.
+                </p>
+                <ul class="strategy-card__list">
+                    <li>Оценить перспективы проекта</li>
+                    <li>AI-инструменты для задач</li>
+                </ul>
+            </div>
+
+            <div class="strategy-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="strategy-card__icon">
+                    <i data-lucide="zap"></i>
+                </div>
+                <h3 class="strategy-card__title">Быстрый старт</h3>
+                <p class="strategy-card__text">
+                    Удобная адаптация без сложностей. Пошаговый путь, понятный каждому, кто стремится к апгрейду.
+                </p>
+                <ul class="strategy-card__list">
+                    <li>Подключение за 2 минуты</li>
+                    <li>Легко разобраться без опыта</li>
+                </ul>
+            </div>
+
+            <div class="strategy-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="strategy-card__icon">
+                    <i data-lucide="trending-up"></i>
+                </div>
+                <h3 class="strategy-card__title">Пассивный рост</h3>
+                <h3 class="strategy-card__title"></h3>
+                <p class="strategy-card__text">
+                    Технологии, которые работают на вас, создавая фундамент для долгосрочного пассивного дохода.
+                </p>
+                <ul class="strategy-card__list">
+                    <li>Практики сегодня</li>
+                    <li>Стратегия на базе AI</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="cases" id="cases">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-subtitle">Результаты, которые говорят сами за себя</span>
+            <h2 class="section-title">Воплотите мечты в реальность</h2>
+        </div>
+
+        <div class="cases__grid">
+            <div class="case-card case-card--large" data-aos="fade-up">
+                <div class="case-card__content">
+                    <span class="case-tag">Tech Lead Transformation</span>
+                    <h3>Из Senior Developer в CTO за 6 месяцев</h3>
+                    <p>Использовали передовую цифровую инфраструктуру для анализа лидерских компетенций. Решения,
+                        которые меняют правила игры.</p>
+                    <div class="case-metric">
+                        <span class="case-metric__val">+120%</span>
+                        <span class="case-metric__label">к доходу</span>
+                    </div>
+                </div>
+                <div class="case-card__image">
+                    <img src="/img/one.jpg" alt="Case Study">
+                </div>
+            </div>
+
+            <div class="case-card case-card--small" data-aos="fade-up" data-aos-delay="100">
+                <div class="case-card__content">
+                    <span class="case-tag">AI Integration</span>
+                    <h4>Оптимизация процессов</h4>
+                    <p>Внедрение AI-инструментов для реальных задач управления командой.</p>
+                    <div class="case-status">Платформа года 2026</div>
+                </div>
+            </div>
+
+            <div class="case-card case-card--small" data-aos="fade-up" data-aos-delay="200">
+                <div class="case-card__content">
+                    <span class="case-tag">Switching Careers</span>
+                    <h4>Релокация в Италию</h4>
+                    <p>Полный карьерный апгрейд с адаптацией под европейский рынок.</p>
+                    <div class="case-metric case-metric--mini">
+                        <i data-lucide="check-circle"></i> <span>Успешно</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-card case-card--medium" data-aos="fade-up" data-aos-delay="300">
+                <div class="case-card__content">
+                    <span class="case-tag">Career Boost</span>
+                    <h3>Постройте карьеру, которая работает на вас</h3>
+                    <p>Стратегия роста на базе инноваций помогла специалисту из Рима выйти на глобальный рынок
+                        консалтинга.</p>
+                </div>
+                <div class="case-card__icon-box">
+                    <i data-lucide="trending-up"></i>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="mentors" id="mentors">
+    <div class="container mentors__container">
+        <div class="mentors__content">
+            <div class="section-header section-header--left" data-aos="fade-up">
+                <span class="section-subtitle">Экспертная поддержка на всех этапах</span>
+                <h2 class="section-title">Ваши проводники в мире апгрейда</h2>
+                <p class="section-desc">Оцените перспективы проекта вместе с теми, кто уже изменил правила игры.</p>
+            </div>
+
+            <div class="mentors__list">
+                <div class="mentor-item active" data-mentor="1" data-aos="fade-up" data-aos-delay="100">
+                    <span class="mentor-item__num">01</span>
+                    <div class="mentor-item__info">
+                        <h3 class="mentor-item__name">Alessandro Rossi</h3>
+                        <p class="mentor-item__role">CTO & AI Architect</p>
+                    </div>
+                    <i data-lucide="arrow-up-right" class="mentor-item__icon"></i>
+                </div>
+
+                <div class="mentor-item" data-mentor="2" data-aos="fade-up" data-aos-delay="200">
+                    <span class="mentor-item__num">02</span>
+                    <div class="mentor-item__info">
+                        <h3 class="mentor-item__name">Giulia Bianchi</h3>
+                        <p class="mentor-item__role">Product Strategy Director</p>
+                    </div>
+                    <i data-lucide="arrow-up-right" class="mentor-item__icon"></i>
+                </div>
+
+                <div class="mentor-item" data-mentor="3" data-aos="fade-up" data-aos-delay="300">
+                    <span class="mentor-item__num">03</span>
+                    <div class="mentor-item__info">
+                        <h3 class="mentor-item__name">Marco Ferrari</h3>
+                        <p class="mentor-item__role">Executive Career Coach</p>
+                    </div>
+                    <i data-lucide="arrow-up-right" class="mentor-item__icon"></i>
+                </div>
+            </div>
+        </div>
+
+        <div class="mentors__preview" data-aos="zoom-in">
+            <div class="mentor-img-wrapper">
+                <img src="/img/two.jpg" alt="Alessandro Rossi" class="mentor-img active" data-mentor-img="1">
+                <img src="/img/three.jpg" alt="Giulia Bianchi" class="mentor-img" data-mentor-img="2">
+                <img src="/img/four.jpg" alt="Marco Ferrari" class="mentor-img" data-mentor-img="3">
+            </div>
+            <div class="mentor-quote">
+                <p id="mentor-quote-text">«Технологии, которые работают на вас — это не будущее, это ваша текущая
+                    стратегия роста.»</p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="faq" id="faq">
+    <div class="container">
+        <div class="section-header" data-aos="fade-up">
+            <span class="section-subtitle">Остались вопросы?</span>
+            <h2 class="section-title">Часто задаваемые вопросы</h2>
+            <p class="section-desc">Все, что вам нужно знать о платформе
+                <?= $domainTitle ?> и карьерном апгрейде в Европе.
+            </p>
+        </div>
+
+        <div class="faq__list">
+            <div class="faq__item" data-aos="fade-up" data-aos-delay="100">
+                <div class="faq__header">
+                    <h3 class="faq__question">Как работает оценка перспектив проекта?</h3>
+                    <div class="faq__icon">
+                        <i data-lucide="plus"></i>
+                    </div>
+                </div>
+                <div class="faq__content">
+                    <div class="faq__answer">
+                        <p>Мы используем AI-инструменты для реальных задач: анализируем текущий рынок труда в Италии и
+                            ЕС, сопоставляем ваши навыки с требованиями топовых компаний и выстраиваем передовую
+                            цифровую инфраструктуру для вашего роста.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq__item" data-aos="fade-up" data-aos-delay="200">
+                <div class="faq__header">
+                    <h3 class="faq__question">Нужен ли мне опыт работы в Европе для старта?</h3>
+                    <div class="faq__icon">
+                        <i data-lucide="plus"></i>
+                    </div>
+                </div>
+                <div class="faq__content">
+                    <div class="faq__answer">
+                        <p>Быстрый и лёгкий старт возможен даже без прямого опыта в зарубежных компаниях. Наша программа
+                            пассивного дохода и карьерного консалтинга поможет адаптировать ваш текущий бэкграунд под
+                            стандарты Евросоюза.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq__item" data-aos="fade-up" data-aos-delay="300">
+                <div class="faq__header">
+                    <h3 class="faq__question">Предложение активно только в Италии?</h3>
+                    <div class="faq__icon">
+                        <i data-lucide="plus"></i>
+                    </div>
+                </div>
+                <div class="faq__content">
+                    <div class="faq__answer">
+                        <p>Платформа уже доступна в Европе в полном объеме. Основной акцент мы делаем на рынок Италии,
+                            но методологии, доказавшие эффективность, применимы для любой страны ЕС.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="faq__item" data-aos="fade-up" data-aos-delay="400">
+                <div class="faq__header">
+                    <h3 class="faq__question">Как быстро я увижу результат?</h3>
+                    <div class="faq__icon">
+                        <i data-lucide="plus"></i>
+                    </div>
+                </div>
+                <div class="faq__content">
+                    <div class="faq__answer">
+                        <p>Первые изменения в стратегии вы сможете внедрить уже на этапе бесплатной консультации.
+                            Постройте карьеру, которая работает на вас, шаг за шагом — первые значимые результаты обычно
+                            видны через 2–4 недели активной работы.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="contact" id="contact">
+    <div class="container contact__container">
+        <div class="contact__info" data-aos="fade-right">
+            <div class="section-header section-header--left">
+                <span class="section-subtitle">Свяжитесь с нами</span>
+                <h2 class="section-title">Готовы к новому этапу?</h2>
+                <p class="section-desc">Бесплатная консультация по всем вопросам карьерного роста и релокации в Европе.
+                    Оставьте заявку, и мы свяжемся с вами в течение 24 часов.</p>
+            </div>
+
+            <div class="contact__details">
+                <div class="contact__detail-item">
+                    <div class="contact__detail-icon"><i data-lucide="phone"></i></div>
+                    <div>
+                        <p class="contact__detail-label">Телефон</p>
+                        <a href="tel:+390697637817" class="contact__detail-link">+39 06 9763 7817</a>
+                    </div>
+                </div>
+                <div class="contact__detail-item">
+                    <div class="contact__detail-icon"><i data-lucide="mail"></i></div>
+                    <div>
+                        <p class="contact__detail-label">Email</p>
+                        <a href="mailto:hello@<?= $fullDomain ?>" class="contact__detail-link">hello@
+                            <?= $fullDomain ?>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact__form-wrapper" data-aos="fade-left">
+            <form action="#" class="contact__form" id="career-form">
+                <div class="form-group">
+                    <label for="name">Ваше имя</label>
+                    <input type="text" id="name" name="name" placeholder="Иван Иванов" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Электронная почта</label>
+                    <input type="email" id="email" name="email" placeholder="email@example.com" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Телефон (только цифры)</label>
+                    <input type="tel" id="phone" name="phone" placeholder="+39XXXXXXXXX" required>
+                </div>
+
+                <div class="form-captcha">
+                    <label for="captcha">Сколько будет <span id="captcha-question">...</span>?</label>
+                    <input type="text" id="captcha" name="captcha" placeholder="Ваш ответ" required>
+                </div>
+
+                <div class="form-checkbox">
+                    <input type="checkbox" id="consent" name="consent" required>
+                    <label for="consent">Я согласен на обработку персональных данных</label>
+                </div>
+
+                <button type="submit" class="btn btn--primary btn--full">Отправить запрос</button>
+
+                <div class="form-success" id="form-success">
+                    <div class="form-success__content">
+                        <i data-lucide="check-circle"></i>
+                        <h3>Запрос отправлен!</h3>
+                        <p>Мы свяжемся с вами в ближайшее время. Спасибо за доверие к
+                            <?= $domainTitle ?>.
+                        </p>
+                        <button type="button" class="btn btn--outline btn--sm" id="close-success">Закрыть</button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__grid">
+            <div class="footer__col footer__col--info">
+                <a href="./#hero" class="logo footer__logo">
+                    <span class="logo__dot"></span>
+                    <span class="logo__text">
+                        <?= $domainTitle ?>
+                    </span>
+                </a>
+                <p class="footer__description">
+                    Платформа года для тех, кто выбирает осознанный рост. Технологии, которые работают на вас в любой
+                    точке Европы.
+                </p>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="footer__title">Навигация</h4>
+                <ul class="footer__list">
+                    <li><a href="./#hero">Главная</a></li>
+                    <li><a href="./#strategies">Стратегии</a></li>
+                    <li><a href="./#cases">Кейсы</a></li>
+                    <li><a href="./#contact">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="footer__title">Юридическая информация</h4>
+                <ul class="footer__list">
+                    <li><a href="./privacy.php">Privacy Policy</a></li>
+                    <li><a href="./cookies.php">Cookie Policy</a></li>
+                    <li><a href="./terms.php">Terms of Service</a></li>
+                    <li><a href="./return.php">Return Policy</a></li>
+                    <li><a href="./disclaimer.php">Disclaimer</a></li>
+                    <li><a href="./contact.php">Contact Us</a></li>
+                    <li><a href="./personal-data-policy.php">Data Policy</a></li>
+                </ul>
+            </div>
+
+            <div class="footer__col">
+                <h4 class="footer__title">Контакты</h4>
+                <ul class="footer__list footer__list--contacts">
+                    <li><a href="tel:+390697637817">+39 06 9763 7817</a></li>
+                    <li><a href="mailto:hello@<?= $fullDomain ?>">hello@
+                            <?= $fullDomain ?>
+                        </a></li>
+                    <li><span class="footer__address">Via della Conciliazione, 4, 00193 Roma RM, Italy</span></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="container footer__bottom">
+            <p>©
+                <?= date('Y') ?>
+                <?= $domainTitle ?>. Все права защищены. Предложение активно только в странах ЕС.
+            </p>
+        </div>
+    </footer>
+<div class="cookie-popup" id="cookie-popup">
+    <div class="cookie-popup__content">
+        <div class="cookie-popup__icon">
+            <i data-lucide="cookie"></i>
+        </div>
+        <div class="cookie-popup__text">
+            <p>Этот сайт использует cookies для улучшения работы. Подробнее — в нашей <a href="./cookies.php">Cookie
+                    политике</a>.</p>
+        </div>
+        <div class="cookie-popup__actions">
+            <button class="btn btn--primary btn--sm" id="cookie-accept">Принять</button>
+        </div>
+    </div>
+</div>
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="https://unpkg.com/lucide@latest"></script>
+
+<script src="script.js"></script>
+</body>
+
+</html>
